@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="style_color_primary">#FFCC00</color>
+    <color name="style_color_primary_dark">#FFCC00</color>
+    <color name="style_color_accent">#FFCC00</color>
+    <color name="fab_color_pressed">#d6ae11</color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="paint_color">#dddddd</color>
+    <color name="text_like_counter">#2b5a83</color>
+
+
+    <color name="background_tab_pressed">#1AFFFFFF</color>
+    <color name="background">#0f000000</color>
+    <color name="black">#FF666666</color>
+    <color name="green">#FF689F38</color>
+    <color name="red">#FFC74B46</color>
+    <color name="orange">#FFF4842D</color>
+    <color name="blue">#FF3F9FE0</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#FF5161BC</color>
+    <color name="greenDark">#3E5F22</color>
+    <color name="banana">#FFCC00</color>
+    <color name="text_color">#454545</color>
+    <color name="text_color_gray">#ffbbabb6</color>
+    <color name="reveal_color">#ececec</color>
+    <color name="bottom_color">#ffffff</color>
+</resources>

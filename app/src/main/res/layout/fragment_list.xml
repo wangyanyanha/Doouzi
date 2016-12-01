@@ -1,0 +1,7 @@
+<com.doouzi.ui.widget.PullToRefreshListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:divider="@null"
+/>
