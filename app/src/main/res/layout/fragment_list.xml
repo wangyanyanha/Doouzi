@@ -1,7 +1,17 @@
-<com.doouzi.ui.widget.PullToRefreshListView
+<com.doouzi.ui.widget.PullRefreshLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/lv_list"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:divider="@null"
-/>
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+</com.doouzi.ui.widget.PullRefreshLayout>

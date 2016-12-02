@@ -59,12 +59,12 @@ public class JokeBudejieUtil {
                 }else if(tag.getText().equals("div class=\"j-r-list-c-desc\""))
         		{
         			String joke=((Div)tag).getStringText();
+                    joke=joke.replaceAll("<br />","\n");
+                    joke=joke.replaceAll(" ","");
                     int s=joke.indexOf(">");
                     joke=joke.substring(s+1);
                     int e=joke.indexOf("<");
                     joke=joke.substring(0,e);
-                    joke=joke.replaceAll("<br />","\n");
-                    joke=joke.replaceAll(" ","");
                     System.out.println(joke + "\n");
                     if(obj!=null) {
                         obj.put("content", joke);

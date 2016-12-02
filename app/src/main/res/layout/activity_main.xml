@@ -37,16 +37,16 @@
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-
+                <com.doouzi.ui.widget.PagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:pstsPaddingMiddle="true"/>
 
             </android.support.v7.widget.Toolbar>
 
-            <com.doouzi.ui.widget.PagerSlidingTabStrip
-                android:id="@+id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:pstsPaddingMiddle="true"/>
+
         </android.support.design.widget.AppBarLayout>
 
 
