@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.doouzi.ui.FragmentJoke;
 import com.doouzi.ui.MyMenuFragment;
 import com.doouzi.ui.widget.PagerSlidingTabStrip;
+import com.doouzi.util.DensityUtil;
 import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 import com.doouzi.util.JsonConvertUtil;
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         tabs.setTextColor(getResources().getColor(R.color.white));
         tabs.setIndicatorColor(getResources().getColor(R.color.white));
+        tabs.setTextSize(DensityUtil.dip2px(this,16));
 
         pager.setOffscreenPageLimit(3);
 

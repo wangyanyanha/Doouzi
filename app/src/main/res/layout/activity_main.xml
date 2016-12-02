@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".MainActivity"
+            android:background="@color/background"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 
@@ -37,12 +38,34 @@
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-                <com.doouzi.ui.widget.PagerSlidingTabStrip
-                    android:id="@+id/tabs"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:background="?attr/colorPrimary"
-                    app:pstsPaddingMiddle="true"/>
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/btn_add"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:adjustViewBounds="true"
+                        android:padding="12dp"
+                        android:background="?attr/colorPrimary"
+                        android:src="@drawable/ic_add_white_48dp"
+                        android:layout_alignParentRight="true"/>
+
+
+                    <com.doouzi.ui.widget.PagerSlidingTabStrip
+                        android:id="@+id/tabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:pstsPaddingMiddle="false"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/btn_add"/>
+
+
+
+                </RelativeLayout>
 
             </android.support.v7.widget.Toolbar>
 

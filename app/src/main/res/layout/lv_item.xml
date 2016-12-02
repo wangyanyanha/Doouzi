@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><!-- item_feed.xml -->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    card_view:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/img_feed_center_1"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="王二傻"
+            android:layout_toLeftOf="@+id/iv_share"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:layout_toEndOf="@+id/iv_avatar" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="18dp"
+            android:src="@drawable/ic_share"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hahahahahahaha"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_dislike"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="300"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tv_content"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/iv_dislike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_dislike"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/tv_dislike"
+            android:layout_toLeftOf="@+id/tv_dislike"
+            android:layout_toStartOf="@+id/tv_dislike" />
+
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="300"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/iv_dislike"
+            android:layout_toLeftOf="@+id/iv_dislike"
+            android:layout_toStartOf="@+id/iv_dislike" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_like"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/tv_like"
+            android:layout_toLeftOf="@+id/tv_like"
+            android:layout_toStartOf="@+id/tv_like" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

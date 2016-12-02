@@ -39,7 +39,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        final View view = LayoutInflater.from(context).inflate(R.layout.item_joke, parent, false);
+        final View view = LayoutInflater.from(context).inflate(R.layout.lv_item, parent, false);
 
         return new CellFeedViewHolder(view);
     }
@@ -53,11 +53,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
         holder.tvJoke.setText(jokes.get(position).content);
-
-        holder.btnComments.setTag(position);
-        holder.btnMore.setTag(position);
         holder.tvJoke.setTag(holder);
-        holder.btnLike.setTag(holder);
 
     }
 
@@ -76,20 +72,12 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     public static class CellFeedViewHolder extends RecyclerView.ViewHolder {
-        ImageButton btnComments;
-        ImageButton btnLike;
-        ImageButton btnMore;
-        TextSwitcher tsLikesCounter;
         TextView tvJoke;
 
         public CellFeedViewHolder(View view) {
             super(view);
 
-            tvJoke=(TextView) view.findViewById(R.id.tv_joke);
-            btnComments = (ImageButton) view.findViewById(R.id.btnComments);
-            btnLike = (ImageButton) view.findViewById(R.id.btnLike);
-            btnMore = (ImageButton) view.findViewById(R.id.btnMore);
-            tsLikesCounter = (TextSwitcher) view.findViewById(R.id.tsLikesCounter);
+            tvJoke=(TextView) view.findViewById(R.id.tv_content);
         }
     }
 
